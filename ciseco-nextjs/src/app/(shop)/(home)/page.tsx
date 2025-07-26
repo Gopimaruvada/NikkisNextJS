@@ -18,6 +18,7 @@ import { getBlogPosts, getCollections, getGroupCollections, getProducts } from '
 import { Button } from '@/shared/Button/Button'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import { Metadata } from 'next'
+import SectionStatistic from '../(other-pages)/about/SectionStatistic'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -42,8 +43,9 @@ async function PageHome() {
       <SectionHero2 />
       <SectionCollectionSlider className="mt-24 lg:mt-32" collections={featuredCollections} />
 <EssentialCategories/>
+
       <div className="relative container my-24 flex flex-col gap-y-24 lg:my-32 lg:gap-y-32">
-       
+      <SectionStatistic/>
         <div className="pb-16">
           <SectionHowItWork />
         </div>
