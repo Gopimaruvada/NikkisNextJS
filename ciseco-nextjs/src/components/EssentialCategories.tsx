@@ -1,0 +1,76 @@
+'use client'
+
+import React, { useState } from 'react'
+import Image from 'next/image'
+import logoImage from '@/images/dogfood.jpg'
+
+const categories = [
+  { label: 'Pedigree', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Dog Wet Food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=10c902a4-651a-4d8a-86d3-10804fc6f3e2&page_no=1' },
+  { label: 'Cat Wet Food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=036d7942-581e-4c72-88be-3cbbbc952601&page_no=1' },
+  { label: 'Accessories', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=c61a9130-2715-409e-8631-9ea8be139d4a&page_no=1' },
+  { label: 'Prescription diet', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Premium food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Fresh food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Supplements', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Monsoon', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Toys', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Fashion', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Grooming essentials', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Beds and mats', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Collars & leash', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Bowls and feeders', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Pet tracker', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+]
+
+export default function EssentialCategories() {
+  const [iframeUrl, setIframeUrl] = useState<string | null>(null)
+
+  return (
+    <section className="container mx-auto my-16">
+      <h2 className="text-3xl font-bold text-center mb-8">Everyday essentials</h2>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-6">
+        {categories.map((cat, id) => (
+          <div
+            key={id}
+            className="flex flex-col items-center text-center group cursor-pointer"
+            onClick={() => setIframeUrl(cat.url)}
+          >
+            <div className="mb-2 relative">
+              <Image
+                src={cat.image}
+                alt={cat.label}
+                width={96}
+                height={96}
+                unoptimized
+                className="object-contain rounded-md"
+              />
+             
+            </div>
+            <p className="text-sm font-semibold">{cat.label}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Iframe Modal */}
+      {iframeUrl && (
+  <div className="fixed inset-0 bg-black bg-opacity-80 z-50">
+   <button
+      onClick={() => setIframeUrl(null)}
+      className="absolute top-4 right-6 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center text-2xl shadow-lg hover:bg-red-500 hover:text-white transition-all z-50"
+      aria-label="Close iframe"
+    >
+      ✕
+    </button>
+    <iframe
+      src={iframeUrl}
+      className="w-full h-full border-none"
+      title="External Content"
+    />
+  </div>
+)}
+    </section>
+  )
+}
+
