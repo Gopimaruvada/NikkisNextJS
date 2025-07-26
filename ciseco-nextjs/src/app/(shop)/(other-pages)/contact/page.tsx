@@ -16,16 +16,43 @@ export const metadata: Metadata = {
 const info = [
   {
     title: '🗺 ADDRESS',
-    desc: 'Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter',
+    desc: 'Nikkis Pet World Kukatpally',
+    Info:'Nikkis Pet World, Geetanjali Towers, 1st floor KPHB 6th Phase Rd, OPP Forum Mall, Kukatpally, Hyderabad, Telangana 500085'
+  },
+
+  {
+    
+    desc: 'Nikkis Pet World Miyapur',
+    Info:'Bollaram Road, Miyapur, Kalapuram Basti, Hyderabad, Telangana 500049'
+  },
+  {
+    
+    desc: 'Nikkis Pet World Madeenaguda',
+    Info:'Nikkis Pet World, HIG 180, 1st floor, Manjeera Pipeline Rd, Ushodaya Enclave, Madeenaguda, Miyapur, Hyderabad, Telangana 500049'
   },
   {
     title: '💌 EMAIL',
-    desc: 'nc.example@example.com',
+    desc: 'nikkispetworld@gmail.com',
   },
   {
     title: '☎ PHONE',
-    desc: '000-123-456-7890',
+    desc: '+91 9381385345 +91 9848204672',
   },
+]
+
+const info1= [
+  {
+    title: '🗺 ADDRESS',
+    desc: 'Nikkis Pet World Kondapur',
+    Info:'Nikkis Pet World, Plot No.101/A, S.No.78, 1st Floor, Avis Arcade, Park Avenue Colony, Raja Rajeshwara Nagar, Hyderabad, Telangana 500084'
+  },
+
+  {
+    
+    desc: 'Nikkis Pet World Nijampet',
+    Info:'Nikkis Pet World, H. No: 3-132, 1st floor, BACHUPALLY MANDAL, weaker section, Nizampet, Hyderabad, Telangana 500090'
+  },
+
 ]
 
 const PageContact = async () => {
@@ -48,7 +75,21 @@ const PageContact = async () => {
               {info.map((item, index) => (
                 <div key={index}>
                   <p className="text-sm font-semibold tracking-wider uppercase dark:text-neutral-200">{item.title}</p>
-                  <span className="mt-4 block text-neutral-500 dark:text-neutral-400">{item.desc}</span>
+                  <span className="mt-4 block text-neutral-700 dark:text-neutral-400">{item.desc}</span>
+                  <span className="mt-4 block text-neutral-500 dark:text-neutral-400">{item.Info}</span>
+                </div>
+              ))}
+             
+            </div>
+          </div>
+
+          <div>
+          <div className="mt-10 flex max-w-sm flex-col gap-y-8 sm:mt-14">
+              {info1.map((item, index) => (
+                <div key={index}>
+                  <p className="text-sm font-semibold tracking-wider uppercase dark:text-neutral-200">{item.title}</p>
+                  <span className="mt-4 block text-neutral-700 dark:text-neutral-400">{item.desc}</span>
+                  <span className="mt-4 block text-neutral-500 dark:text-neutral-400">{item.Info}</span>
                 </div>
               ))}
               <div>
@@ -57,35 +98,7 @@ const PageContact = async () => {
               </div>
             </div>
           </div>
-
-          <div>
-            <Form action={handleSubmit}>
-              <Fieldset>
-                <FieldGroup>
-                  <Field>
-                    <Label>Full name</Label>
-                    <Input name="name" placeholder="Example Doe" type="text" />
-                  </Field>
-                  <Field>
-                    <Label>Email address</Label>
-                    <Input name="email" type="email" placeholder="example@example.com" />
-                  </Field>
-                  <Field>
-                    <Label>Message</Label>
-                    <Textarea name="message" rows={6} />
-                  </Field>
-                  <ButtonPrimary type="submit">Send Message</ButtonPrimary>
-                </FieldGroup>
-              </Fieldset>
-            </Form>
-          </div>
         </div>
-
-        <Divider />
-      </div>
-
-      <div className="container pt-16 lg:pt-28">
-        <SectionPromo1 />
       </div>
     </div>
   )
