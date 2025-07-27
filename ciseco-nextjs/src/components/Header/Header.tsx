@@ -39,7 +39,7 @@ const Header: FC<HeaderProps> = async ({ hasBorderBottom = true }) => {
 
   <div className="flex flex-col">
     <h1 className="text-xl font-semibold sm:text-2xl md:text-2xl">
-      Nikkis Pet's World
+      Nikkis Pet World
     </h1>
     <p className="text-sm text-neutral-500 dark:text-neutral-400">
       PET SHOP | PET GROOMING | PET SPA | PET CLINIC | VET CARE | PET KENNELS | PET STORE
