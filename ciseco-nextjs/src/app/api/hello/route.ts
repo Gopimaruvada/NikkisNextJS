@@ -1,3 +1,9 @@
-export async function GET(request: Request) {
-  return new Response('Hello, Next.js!')
+// src/app/api/hello/route.ts
+import { NextRequest } from 'next/server';
+
+export async function GET(request: NextRequest) {
+  return new Response(JSON.stringify({ message: 'Hello World' }), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' },
+  });
 }
