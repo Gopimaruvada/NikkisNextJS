@@ -21,8 +21,8 @@ const Layout: FC<Props> = ({ children }) => {
             <div className="max-w-2xl">
               <h2 className="text-3xl font-semibold xl:text-4xl">Account</h2>
               <span className="mt-4 block text-base text-neutral-500 sm:text-lg dark:text-neutral-400">
-                <span className="font-semibold text-neutral-900 dark:text-neutral-200">Enrico Cole,</span>{' '}
-                ciseco@gmail.com · Los Angeles, CA
+                <span className="font-semibold text-neutral-900 dark:text-neutral-200">Nikkis pet world,</span>{' '}
+         
               </span>
             </div>
 

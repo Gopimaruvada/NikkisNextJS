@@ -1,6 +1,6 @@
-# Ciseco Next.js & Tailwind CSS template
+# Nikiis Next.js & Tailwind CSS template
 
-To run the Ciseco template, first install the npm dependencies:
+To run the Nikkis template, first install the npm dependencies:
 
 ```bash
 npm install
