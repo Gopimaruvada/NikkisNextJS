@@ -11,17 +11,32 @@ const FOUNDER_DEMO: Statistic[] = [
   {
     id: '1',
     heading: 'The best pet store in hyderabad ',
-    subHeading: 'Articles have been public around the world (as of Sept. 30, 2025)',
+    subHeading: 'dog training in Hyderabad',
   },
   {
     id: '2',
     heading: 'Best pets available in Hyderabad',
-    subHeading: 'Registered users account and active users (as of Sept. 30, 2025)',
+    subHeading: 'dog care tips - best dog beds 2025 best - dog groomers in Hyderabad',
   },
   {
     id: '3',
-    heading: 'Pets dog in Hyderabad',
-    subHeading: 'Countries and regions have our presence (as of Sept. 30, 2025)',
+    heading: 'Dog dental care - vaccinations for dogs',
+    subHeading: 'Dog dental care - vaccinations for dogs',
+  },
+  {
+    id: '4',
+    heading: 'We are best pet shop in hyderabad',
+    subHeading: 'Hyderabad•pet shop•pets',
+  },
+  {
+    id: '5',
+    heading: 'best dog groomers in  hyderabad',
+    subHeading: 'Hyderabad•pet shop•pets',
+  },
+  {
+    id: '5',
+    heading: 'eco-friendly dog products',
+    subHeading: 'Hyderabad•pet shop•pets',
   },
 ]
 

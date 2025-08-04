@@ -7,6 +7,7 @@ import catImage from '@/images/catfood.png'
 import pedigree from '@/images/pedigree.png'
 import drolls from '@/images/drolls.png'
 import healthCare from '@/images/healthcare.png'
+import shampoo from '@/images/Shampoo.png'
 
 const categories = [
   { label: 'Pedigree', image: pedigree, url: 'https://mybillbook.in/store/nikkispetworld' },
@@ -17,15 +18,16 @@ const categories = [
   { label: 'Health Care(Medicines)', image: healthCare, url: 'https://mybillbook.in/store/nikkispetworld?category=f8969e12-eb95-46ef-a39f-a46eeaaeb469&page_no=1' },
   { label: 'Health Care (Suppliments)', image: healthCare, url: 'https://mybillbook.in/store/nikkispetworld?category=6b8b851d-f028-4b87-babe-cec8cd538654&page_no=1' },
   { label: 'Royal Canin', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=5eaac5da-0e5e-48da-88f6-863a782c1007&page_no=1' },
-  { label: 'Shampoo & Conditioners', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=a152ffc4-5f95-4c94-a00e-dbbf1e162497&page_no=1' },
-  { label: 'Toys', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Fashion', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Grooming essentials', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Beds and mats', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Collars & leash', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Bowls and feeders', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Pet tracker', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Shampoo & Conditioners', image: shampoo, url: 'https://mybillbook.in/store/nikkispetworld?category=a152ffc4-5f95-4c94-a00e-dbbf1e162497&page_no=1' },
 ]
+//   { label: 'Toys', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+//   { label: 'Fashion', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+//   { label: 'Grooming essentials', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+//   { label: 'Beds and mats', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+//   { label: 'Collars & leash', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+//   { label: 'Bowls and feeders', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+//   { label: 'Pet tracker', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+// ]
 
 export default function EssentialCategories() {
   const [iframeUrl, setIframeUrl] = useState<string | null>(null)

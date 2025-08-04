@@ -39,6 +39,7 @@ async function PageHome() {
 
       <div className="container relative my-24 flex flex-col gap-y-24 lg:my-32 lg:gap-y-32">
         <SectionStatistic />
+        
         <div className="pb-16">
           <SectionHowItWork />
         </div>
