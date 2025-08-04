@@ -5,17 +5,19 @@ import Image from 'next/image'
 import logoImage from '@/images/dogfood.jpg'
 import catImage from '@/images/catfood.png'
 import pedigree from '@/images/pedigree.png'
+import drolls from '@/images/drolls.png'
+import healthCare from '@/images/healthcare.png'
 
 const categories = [
   { label: 'Pedigree', image: pedigree, url: 'https://mybillbook.in/store/nikkispetworld' },
   { label: 'Dog Wet Food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=10c902a4-651a-4d8a-86d3-10804fc6f3e2&page_no=1' },
   { label: 'Cat Wet Food', image: catImage, url: 'https://mybillbook.in/store/nikkispetworld?category=036d7942-581e-4c72-88be-3cbbbc952601&page_no=1' },
-  { label: 'Accessories', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=c61a9130-2715-409e-8631-9ea8be139d4a&page_no=1' },
-  { label: 'Prescription diet', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Premium food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Fresh food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Supplements', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
-  { label: 'Monsoon', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Drolls', image: drolls, url: 'https://mybillbook.in/store/nikkispetworld?category=89e6add3-bd92-4542-91c0-95461f572c9a&page_no=1' },
+  { label: 'Health care(Flea & Tick)', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=c2681f8e-f0ae-4534-88fd-d7ddb263b30a&page_no=1' },
+  { label: 'Health Care(Medicines)', image: healthCare, url: 'https://mybillbook.in/store/nikkispetworld?category=f8969e12-eb95-46ef-a39f-a46eeaaeb469&page_no=1' },
+  { label: 'Health Care (Suppliments)', image: healthCare, url: 'https://mybillbook.in/store/nikkispetworld?category=6b8b851d-f028-4b87-babe-cec8cd538654&page_no=1' },
+  { label: 'Royal Canin', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=5eaac5da-0e5e-48da-88f6-863a782c1007&page_no=1' },
+  { label: 'Shampoo & Conditioners', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=a152ffc4-5f95-4c94-a00e-dbbf1e162497&page_no=1' },
   { label: 'Toys', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
   { label: 'Fashion', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
   { label: 'Grooming essentials', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
