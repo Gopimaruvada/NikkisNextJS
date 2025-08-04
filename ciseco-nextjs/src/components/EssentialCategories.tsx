@@ -3,11 +3,13 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import logoImage from '@/images/dogfood.jpg'
+import catImage from '@/images/catfood.png'
+import pedigree from '@/images/pedigree.png'
 
 const categories = [
-  { label: 'Pedigree', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
+  { label: 'Pedigree', image: pedigree, url: 'https://mybillbook.in/store/nikkispetworld' },
   { label: 'Dog Wet Food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=10c902a4-651a-4d8a-86d3-10804fc6f3e2&page_no=1' },
-  { label: 'Cat Wet Food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=036d7942-581e-4c72-88be-3cbbbc952601&page_no=1' },
+  { label: 'Cat Wet Food', image: catImage, url: 'https://mybillbook.in/store/nikkispetworld?category=036d7942-581e-4c72-88be-3cbbbc952601&page_no=1' },
   { label: 'Accessories', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld?category=c61a9130-2715-409e-8631-9ea8be139d4a&page_no=1' },
   { label: 'Prescription diet', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
   { label: 'Premium food', image: logoImage, url: 'https://mybillbook.in/store/nikkispetworld' },
