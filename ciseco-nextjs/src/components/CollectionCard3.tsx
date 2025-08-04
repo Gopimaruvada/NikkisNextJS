@@ -27,7 +27,7 @@ const CollectionCard3: FC<Props> = ({ className = '', collection }) => {
 
   const iframeModal = (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-      <div className="relative h-[90vh] w-[90vw] bg-white rounded-lg shadow-lg">
+      <div className="relative w-full h-full bg-white rounded-lg shadow-lg">
         <button
           className="absolute top-2 end-2 text-xl font-bold p-2 z-40"
           onClick={() => setIframeUrl(null)}

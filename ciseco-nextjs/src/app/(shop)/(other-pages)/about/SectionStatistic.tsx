@@ -30,12 +30,12 @@ const FOUNDER_DEMO: Statistic[] = [
   },
   {
     id: '5',
-    heading: 'best dog groomers in  hyderabad',
+    heading: 'Best dog groomers in  hyderabad',
     subHeading: 'Hyderabad•pet shop•pets',
   },
   {
     id: '5',
-    heading: 'eco-friendly dog products',
+    heading: 'Eco-friendly dog products',
     subHeading: 'Hyderabad•pet shop•pets',
   },
 ]
