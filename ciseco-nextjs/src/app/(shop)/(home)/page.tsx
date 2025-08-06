@@ -11,6 +11,7 @@ import { Button } from '@/shared/Button/Button'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import { Metadata } from 'next'
 import SectionStatistic from '../(other-pages)/about/SectionStatistic'
+import SectionAds from '@/components/blog/SectionAds'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -39,12 +40,12 @@ async function PageHome() {
 
       <div className="container relative my-24 flex flex-col gap-y-24 lg:my-32 lg:gap-y-32">
         <SectionStatistic />
-        
+        {/* <SectionAds /> */}
         <div className="pb-16">
           <SectionHowItWork />
         </div>
         {/* <SectionCollectionSlider2 collections={departmentCollections} /> */}
-        <Divider />
+        {/* <Divider />
         <div>
           <Heading headingDim="From the Nikkis blog">The latest news</Heading>
           <SectionMagazine5 posts={blogPosts} />
@@ -54,7 +55,7 @@ async function PageHome() {
               <ArrowRightIcon className="h-4 w-4" />
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
