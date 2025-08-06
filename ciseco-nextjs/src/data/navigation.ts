@@ -20,6 +20,11 @@ export async function getNavigation(): Promise<TNavigationItem[]> {
       href: '/about',
       name: 'About US',
     },
+    {
+      id: '5',
+      href: '/vetonline',
+      name: 'Vet Online',
+    },
   
     // {
     //   id: '5',

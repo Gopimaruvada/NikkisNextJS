@@ -59,15 +59,21 @@ const Header: FC<HeaderProps> = async ({ hasBorderBottom = true }) => {
   <Link href="/subscription" className="hover:text-neutral-900 dark:hover:text-white">
       Spa & Grooming
     </Link>
-    <Link href="/blog" className="hover:text-neutral-900 dark:hover:text-white">
-      Blog
-    </Link>
+    {/* <Link href="/blog" className="hover:text-neutral-900 dark:hover:text-white">
+      Blogs
+    </Link> */}
     <Link href="/contact" className="hover:text-neutral-900 dark:hover:text-white">
       Contact
     </Link>
     <Link href="/about" className="hover:text-neutral-900 dark:hover:text-white">
       About US
     </Link>
+    <Link href="/vetonline" className="hover:text-neutral-900 dark:hover:text-white">
+     Vet Online
+    </Link>
+    {/* <Link href="/about" className="hover:text-neutral-900 dark:hover:text-white">
+     Vet Clinic
+    </Link> */}
   </nav>
 
   {/* Other components (optional) */}
