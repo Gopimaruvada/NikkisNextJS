@@ -10,8 +10,8 @@ export interface Statistic {
 const FOUNDER_DEMO: Statistic[] = [
   {
     id: '1',
-    heading: 'The best pet store in hyderabad ',
-    subHeading: 'dog training in Hyderabad',
+    heading: 'Nikkis Pet world',
+    subHeading: 'Expert dog training in Hyderabad',
   },
   {
     id: '2',
