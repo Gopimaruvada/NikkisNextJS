@@ -39,7 +39,7 @@ const VetOnline = () => {
               <img
                 src={doctor.src}
                 alt="Vet care"
-                className="rounded-lg w-full object-cover h-50 md:h-full"
+                className="rounded-lg w-full object-cover h-50 md:h-150"
               />
             </div>
 
@@ -55,9 +55,7 @@ const VetOnline = () => {
                 <li>Specialized diet plans and pet meal delivery</li>
                 <li>Safe and loving doggy daycare & boarding</li>
               </ul>
-              <div className="mt-5">
-                <ButtonPrimary href="#">Book Appointment</ButtonPrimary>
-              </div>
+             
             </div>
           </div>
 
